@@ -162,6 +162,23 @@ def save_model(trainer, parameters, save_path):
 ```
 python train.py 
 ```
+会在终端有如下输出：
+```
+Pass 0, Batch 0, Cost 306.693146, {'classification_error_evaluator': 1.0}
+.........
+Pass 0, Batch 10, Cost 211.242233, {'classification_error_evaluator': 0.9268292784690857}
+.........
+Pass 0, Batch 20, Cost 203.324371, {'classification_error_evaluator': 0.8860759735107422}
+.........
+Pass 0, Batch 30, Cost 351.998260, {'classification_error_evaluator': 0.8540145754814148}
+
+```
+## 执行预测
+在终端执行以下指令：
+```
+python infer.py
+```
+将产生对应的问句并给出对应的回答
 ## 扩展
 ---
 读者可以自行下载文章中的原始数据集[3]进行进一步的扩展。
