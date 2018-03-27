@@ -14,8 +14,8 @@ def save_model(trainer, parameters, save_path):
         trainer.save_parameter_to_tar(f)
 
 def main():
-    paddle.init(use_gpu=True, trainer_count=4)
-    is_generating = False
+    paddle.init(use_gpu=True, trainer_count=1)
+    is_generating = True
 
     # 定义dict的维度
     dict_size = 30000
