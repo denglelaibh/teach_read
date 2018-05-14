@@ -2,8 +2,7 @@
 import sys, os
 import numpy as np
 import paddle.v2 as paddle
-from attentive_reader import attentive_reader_net
-from impatient_reader import impatient_reader_net
+
 from two_layer_lstm import two_layer_lstm_net
 
 with_gpu = os.getenv('WITH_GPU', '0') != '0'
